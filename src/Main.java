@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Вас приветствует генератор паролей!");
+        System.out.println("3");
         System.out.print("Укажите длину пароля (количество символов)? ");
-        System.out.print("nhfzkz ");
-        System.out.print("Укажите длину пароля (количество символов)? ");
+
 
     }
 }
