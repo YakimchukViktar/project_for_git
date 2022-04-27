@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Создайте свой пароль!");
         System.out.print("Укажите длину пароля (количество символов)? ");
-        int lengthPassword = getUserNumber();
+        int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
-            if (lengthPassword < 5) {
+            if (lengthPassword < 5) { //проверка пороля на нужную нам длину
                 lengthPassword = getUserNumber();
             } else break;
         }
-        System.out.println("Сейчас вам сгенирируется случайный пароль:  ");
+        System.out.println("Your password: ");
         for (int i = 0; i < lengthPassword; i++) {
             System.out.print((char) (short) (Math.random() * 94 + 33));
         }
