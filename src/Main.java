@@ -11,7 +11,7 @@ public class Main {
             } else break;
         }
         System.out.println("Your password: ");
-        for (int i = 5; i < lengthPassword + 5; i++) { //в этой строке 0 изменил на 5 и добавил 5 к длине
+        for (int i = 0; i < lengthPassword; i++) {
             System.out.print((char) (short) (Math.random() * 94 + 33));
         }
     }
