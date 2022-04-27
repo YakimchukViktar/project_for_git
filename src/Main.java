@@ -10,7 +10,7 @@ public class Main {
                 lengthPassword = getUserNumber();
             } else break;
         }
-        System.out.println("Сейчас вам сгенирируется случайный пароль:  ");
+        System.out.println("Your password: ");
         for (int i = 0; i < lengthPassword; i++) {
             System.out.print((char) (short) (Math.random() * 94 + 33));
         }
