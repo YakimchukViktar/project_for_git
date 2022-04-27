@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Вас приветствует генератор паролей!");
+        System.out.println("Создайте свой пароль!");
         System.out.print("Укажите длину пароля (количество символов)? ");
         int lengthPassword = getUserNumber();
         while (true) {
@@ -10,7 +10,7 @@ public class Main {
                 lengthPassword = getUserNumber();
             } else break;
         }
-        System.out.println("Ваш пароль: ");
+        System.out.println("Сейчас вам сгенирируется случайный пароль:  ");
         for (int i = 0; i < lengthPassword; i++) {
             System.out.print((char) (short) (Math.random() * 94 + 33));
         }
