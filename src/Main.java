@@ -7,7 +7,7 @@ public class Main {
         int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
             if (lengthPassword < 8) { //проверка пороля на нужную нам длину
-                lengthPassword = getUserNumber();
+               lengthPassword = getUserNumber();
             } else break;
         }
         System.out.println("Your password: ");
@@ -17,7 +17,7 @@ public class Main {
     }
 
     private static int getUserNumber() {
-        System.out.print("Введите целое число не менее 8: ");
+        System.out.print("Введите целое число не менее 8: ");//длина пароля сейчас не меньше 8
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
