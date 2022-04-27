@@ -6,12 +6,15 @@ public class Main {
         System.out.print("Укажите длину пароля (количество символов)? ");
         int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
-            if (lengthPassword < 8) { //проверка пороля на нужную нам длину
-               lengthPassword = getUserNumber();
+
+            if (lengthPassword < 5) { //проверка пароля на нужную нам длину
+                lengthPassword = getUserNumber();
+
+           
             } else break;
         }
         System.out.println("Your password: ");
-        for (int i = 0; i < lengthPassword; i++) {
+        for (int i = 5; i < lengthPassword+5; i++) { //в этой строке 0 изменил на 5 и добавил 5 к длине
             System.out.print((char) (short) (Math.random() * 94 + 33));
         }
     }
