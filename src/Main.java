@@ -6,7 +6,7 @@ public class Main {
         System.out.print("Укажите длину пароля (количество символов)? ");
         int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
-            if (lengthPassword < 5) { //проверка пароля на нужную нам длину
+            if (lengthPassword < 7) { //проверка пароля на нужную нам длину
                 lengthPassword = getUserNumber();
             } else break;
         }
