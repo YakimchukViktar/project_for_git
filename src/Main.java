@@ -13,7 +13,7 @@ public class Main {
             if (lengthPassword < 5) { //проверка пароля на нужную нам длину
                 lengthPassword = getUserNumber();
 
-           
+
             } else break;
         }
         System.out.println("Your password: ");
