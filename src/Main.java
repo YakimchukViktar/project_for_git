@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Создайте свой пароль!");
+        System.out.println("Создайте свой пароль.");
         System.out.print("Укажите длину пароля (количество символов)? ");
         int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
