@@ -23,7 +23,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
-        } else System.out.print("Вы ввели не целое число. ");
+        } else System.out.print("Вы ввели не целое число.");
         return getUserNumber();
     }
 }
