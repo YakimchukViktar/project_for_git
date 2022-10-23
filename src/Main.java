@@ -5,7 +5,7 @@ public class Main {
         // приложение для создания индивидуального пароля
 
         System.out.println("Create your password.");
-        System.out.print("Укажите длину пароля (количество символов)? ");
+        System.out.print("Set the size of your password (the number of symbols)? ");
         int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
         while (true) {
             if (lengthPassword < 8) {
