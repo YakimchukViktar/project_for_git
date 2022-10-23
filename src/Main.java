@@ -19,7 +19,7 @@ public class Main {
     }
 
     private static int getUserNumber() {
-        System.out.print("Введите целое число не менее 8: ");
+        System.out.print("Enter the number bigger than 8: ");
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
