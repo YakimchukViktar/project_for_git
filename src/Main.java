@@ -2,11 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // приложение для создания индивидуального пароля
-
         System.out.println("Create your password.");
-        System.out.print("Set the size of your password (the number of symbols)? ");
-        int lengthPassword = getUserNumber();// вызываем метод, который возвратит нам длину пароля
+        System.out.print("Set the size of your password (number of symbols)? ");
+        int lengthPassword = getUserNumber();
         while (true) {
             if (lengthPassword < 8) {
                 lengthPassword = getUserNumber();
