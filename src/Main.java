@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Create your password.");
-        System.out.print("Set the size of your password (number of symbols)? ");
+        System.out.print("Set your password size (more than 8 characters)? ");
         int lengthPassword = getUserNumber();
         while (true) {
             if (lengthPassword < 8) {
@@ -17,11 +17,11 @@ public class Main {
     }
 
     private static int getUserNumber() {
-        System.out.print("Enter the number bigger than 8: ");
+        System.out.print("Please enter an integer greater than 8: ");
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
-        } else System.out.print("Вы ввели не целое число.");
+        } else System.out.print("You did not enter an integer greater than 8. Please trt again.");
         return getUserNumber();
     }
 }
